@@ -95,7 +95,7 @@ class ArrayWrapper implements \ArrayAccess
 		unset($this->data[$offset]);
 	}
 
-	public function offsetGet($offset)
+	public function offsetGet($offset) : mixed
 	{
 		return $this->data[$offset] ?? null;
 	}
